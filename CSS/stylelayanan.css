@@ -1,0 +1,454 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F5F5F5;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*Header*/
+header {
+    height: 75px;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    padding: 0px 50px 0px 124px;
+    background-color: #FFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 75px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0px 7px;
+}
+
+nav ul li a {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 17px;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #299E63;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1.5px;
+    width: 0;
+    background-color: #299E63;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li a::before {
+    left: 50%;
+}
+
+nav ul li a::after {
+    right: 50%;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    width: 40%;
+}
+
+/* Akhir Header */
+
+/* Hero Section */
+.hero {
+    background: #fafafa;
+    width: 100vw;
+    height: 692px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 124px;
+}
+
+.hero-head {
+    width: 692px;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0 0 24px;
+}
+
+.hero-description {
+    width: 582px;
+    color: #757575;
+    font-size: 14px;
+    margin: 0 0 36px;
+}
+
+.hero form {
+    position: relative;
+    width: 402px;
+}
+
+.hero #search {
+    width: 402px;
+    height: 48px;
+    color: #757575;
+    padding: 12px 24px;
+    outline: none;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #0a0a0a;
+}
+
+.hero #icon-search {
+    position: absolute;
+    right: 24px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.hero-image {
+    padding: 137px 0 0;
+}
+
+/* Akhir Hero Section */
+.container-articles-sidebar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Artikel */
+.articles {
+    padding: 72px 124px;
+    text-align: justify;
+}
+
+.articles .pengertian-bank-sampah .heading {
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+
+.articles .pengertian-bank-sampah .description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+    width: 700px;
+    font-weight: 500;
+    transform: rotate(-0.03deg);
+}
+
+.articles .tujuan-bank-sampah {
+    margin: 32px 0 0;
+}
+
+.articles .tujuan-bank-sampah .heading {
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+
+.articles .tujuan-bank-sampah .description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+    width: 700px;
+    font-weight: 500;
+    transform: rotate(-0.03deg);
+}
+
+.articles .manfaat-bank-sampah {
+    margin: 32px 0 0;
+}
+
+.articles .manfaat-bank-sampah .heading {
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+
+.articles .manfaat-bank-sampah .description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+    width: 700px;
+    transform: rotate(-0.03deg);
+}
+
+.articles .alur-bank-sampah {
+    margin: 32px 0 0;
+    width: 700px;
+}
+
+.articles .alur-bank-sampah .heading {
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+
+.articles .alur-bank-sampah .subheading {
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.011em;
+}
+
+.articles .alur-bank-sampah .description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #616161;
+    width: 700px;
+}
+
+.articles .cara-mendirikan-bank-sampah {
+    margin: 32px 0 0;
+}
+
+.articles .cara-mendirikan-bank-sampah .heading {
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 24px;
+
+}
+
+.articles .cara-mendirikan-bank-sampah .description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+    width: 700px;
+}
+
+.articles .cara-mendirikan-bank-sampah .steps {
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+    width: 700px;
+}
+
+.articles .struktur-bank-sampah {
+    margin: 32px 0 0;
+    width: 700px;
+}
+
+.articles .struktur-bank-sampah .heading {
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+
+.articles .struktur-bank-sampah .subheading {
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.articles .struktur-bank-sampah .description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #616161;
+    width: 700px;
+}
+
+/* Akhir Artikel */
+/* Sidebar */
+.sidebar {
+    margin: 72px 124px 0 0;
+    height: 585px;
+    padding: 85px 80px 0 38px;
+    background: #FFF;
+    border-radius: 20px;
+    position: relative;
+}
+
+.sidebar .heading {
+    margin: 0 0 24px;
+}
+
+.sidebar ul li {
+    margin: 24px;
+}
+
+.sidebar ul li .links {
+    color: #616161;
+}
+
+.sidebar img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Akhir Sidebar */
+/* Location */
+.location {
+    padding: 32px 124px 140px;
+}
+
+.location .heading {
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+
+.location .bank-sampah {
+    background: #fff;
+    padding: 12px 16px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    margin: 12px 0 0;
+}
+
+.location .bank-sampah .description-section {
+    margin: 0 0 0 24px;
+}
+
+.location .bank-sampah .heading {
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location .bank-sampah .ratings {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -12px;
+}
+
+.location .bank-sampah .addres {
+    font-size: 14px;
+    font-weight: 500;
+    color: #616161;
+}
+
+/* Akhir Location */
+/*Footer*/
+footer {
+    width: 100%;
+    height: 120px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.footer-nav {
+    display: flex;
+    margin: 28px 0px 24px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+footer .logo {
+    width: 100px;
+    height: 44px;
+    left: 0;
+    position: absolute;
+    margin: 20px 0px 0px 124px;
+}
+
+footer .text-color {
+    color: #299E63;
+}
+
+footer .logo img {
+    width: 100px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-nav ul li {
+    margin-right: 24px;
+}
+
+.footer-nav ul li a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    padding: 10px 15px 10px;
+    border-radius: 5px;
+}
+
+.footer-nav ul li a:hover {
+    color: #fff;
+    background-color: #299E63;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    transition: all 900ms cubic-bezier(.23, 1, 0.32, 1);
+   }
+   
+   .footer-nav ul li a:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+  
+.copyright {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 124px;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    background: #299e63;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.006em;
+    color: #fafafa;
+}
